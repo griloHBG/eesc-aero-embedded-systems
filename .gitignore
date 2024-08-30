@@ -1,0 +1,8 @@
+/cmake-build-debug-arm/
+/cmake-build-debug-arm-docker/
+/cmake-build-debug-x86_64/
+/.crossnote/
+/dockerfile/lely-core/
+tmuxerror
+vgcore.*
+/.idea/

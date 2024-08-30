@@ -1,0 +1,12 @@
+prefix=/lely-core/install-arm-docker-debian-11
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: liblely-coapp
+Description: C++ CANopen application library
+URL: https://gitlab.com/lely_industries/lely-core
+Version: 2.3.0
+Requires: liblely-libc >= 2.3.0 liblely-io2 >= 2.3.0 liblely-co >= 2.3.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -llely-coapp

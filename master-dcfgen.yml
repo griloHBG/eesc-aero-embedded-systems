@@ -1,0 +1,64 @@
+# options:
+#   dcf_path: ""
+#   heartbeat_multiplier: 3.0
+
+master:
+  node_id: 2
+  # baudrate: 1000 # kbit/s
+  # vendor_id: 0x12345678
+  # product_code: 0x12345678
+  # revision_number: 0x12345678
+  # serial_number: 0x12345678
+  # heartbeat_multiplier: 3.0
+  # heartbeat_consumer: true
+  # heartbeat_producer: 0 # ms
+  # emcy_inhibit_time: 0 # 100 us
+  sync_period: 10000 # us
+  # sync_window: 0 # us
+  # sync_overflow: 0
+  # error_behavior: {1: 0x00}
+  # nmt_inhibit_time: 0 # 100 us
+  # start: true
+  # start_nodes: true
+  # start_all_nodes: false
+  # reset_all_nodes: false
+  # stop_all_nodes: false
+  # boot_time: 0 # ms
+
+slave_2:
+  dcf: "epos_com_motorzao_limitado_5000.eds"
+  # dcf_path: ""
+  node_id: 1
+  # revision_number: 0x12345678
+  # serial_number: 0x12345678
+  # heartbeat_multiplier: 3.0
+  # heartbeat_consumer: false
+  # heartbeat_producer: 0 # ms
+  # error_behavior: {}
+  # rpdo:
+  #   1:
+  #     enabled: true
+  #     cob_id: auto
+  #     transmission: 0x01
+  #     inhibit_time: 0 # 100 us
+  #     event_timer: 0 # ms
+  #     mapping:
+  #       - {index: 0x4000, sub_index: 0x00}
+  # tpdo:
+  #   1:
+  #     enabled: true
+  #     cob_id: auto
+  #     transmission: 0x01
+  #     inhibit_time: 0 # 100 us
+  #     event_timer: 0 # ms
+  #     sync_start: 0
+  #     mapping:
+  #       - {index: 0x4001, sub_index: 0x00}
+  # boot: true
+  # mandatory: false
+  # reset_communication: true
+  # software_file: "slave_v1.2.3.bin"
+  # software_version: 0x00010203
+  # restore_configuration: 0x00
+  # sdo:
+  #   - {index: 0x5000, sub_index: 0x00, value: 42}
