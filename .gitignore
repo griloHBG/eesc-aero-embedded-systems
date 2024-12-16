@@ -6,3 +6,5 @@
 tmuxerror
 vgcore.*
 /.idea/
+build
+build_arm

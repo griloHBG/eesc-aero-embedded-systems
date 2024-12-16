@@ -1,0 +1,3 @@
+[submodule "lely-core"]
+	path = lely-core
+	url = https://gitlab.com/lely_industries/lely-core.git
