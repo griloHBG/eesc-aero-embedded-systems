@@ -18,7 +18,13 @@ Este projeto do github é uma fork do projeto original desenvolvido por Henrique
 Para utilizar o software, espera-se que o usuário tenha instalado em sua máquina as ferramentas git e docker. Para mais informações, consulte as documentações oficiais.
 
 ## Compilação para ARM
-Primeiramente, realize o clone deste repositório git, navegue para a pasta do software e execute os comandos:
+Primeiramente, realize o clone deste repositório git e seus submódulos:
+
+```bash
+git clone --recurse-submodules git@github.com:Jorge-Henrique-Mellega/eesc-aero-embedded-systems-grupoMK.git
+```
+
+Navegue para a pasta do software e execute os comandos:
 
 ```bash
 sudo docker build -f dockerfile/Dockerfile -t myimage .
@@ -38,6 +44,6 @@ pkg-config --cflags liblely-coapp
 pkg-config --libs liblely-coapp
 make
 ```
-Seu arquivo executável para ARM estará disponível na pasta build_arm com o nome "eesc-aero-embedded-systems-grupoMK".
+Seu arquivo executável para ARM estará disponível na pasta build_arm com o nome "eesc-aero-embedded-systems".
 
 
