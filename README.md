@@ -12,6 +12,8 @@ Integrantes do Grupo:<br>
 # Introdução
 Este projeto do github é uma fork do projeto original desenvolvido por Henrique Garcia (@griloHBG), disponível em https://github.com/griloHBG/eesc-aero-embedded-systems. Portanto, o objetivo é realizar alterações de forma a corrigir bugs, tornar o software mais fácil de utilizar e expandir suas funcionalidades. Tais objetivos foram propostos pelo docente supracitado, cujo intuito é estimular o desenvolvimento dos alunos envolvidos na área de sistemas embarcados.
 
+Este projeto implementa diferentes métodos de controle (PID, DLQR e DLQR-Event) para um sistema de controle baseado em CANopen. Ele utiliza as bibliotecas Armadillo e ManoplaLelyBBB para cálculo matricial e comunicação com dispositivos, respectivamente. O código inclui funcionalidades para ajustar os parâmetros do controlador, monitorar o desempenho do sistema e registrar os dados do experimento em arquivos de log.
+
 # Quickstart
 
 ## Requisitos
