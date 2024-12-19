@@ -4,6 +4,7 @@ Docente: Glauco Augusto de Paula Caurin
 <br>
 Integrantes do Grupo:<br>
                       Alice Czyz Froes Fontes - 11802478 <br>
+                      Guilherme Azevedo Escudeiro - 11345600 <br>
                       Jorge Henrique Mellega - 11802610 <br>
                       Rhayna Christiani Vasconcelos Marques Casado - 13676429 <br>
                       Jackson Wagner Silva - 12696211 <br>
@@ -12,8 +13,45 @@ Integrantes do Grupo:<br>
 # Introdução
 Este projeto do github é uma fork do projeto original desenvolvido por Henrique Garcia (@griloHBG), disponível em https://github.com/griloHBG/eesc-aero-embedded-systems. Portanto, o objetivo é realizar alterações de forma a corrigir bugs, tornar o software mais fácil de utilizar e expandir suas funcionalidades. Tais objetivos foram propostos pelo docente supracitado, cujo intuito é estimular o desenvolvimento dos alunos envolvidos na área de sistemas embarcados.
 
-Este projeto implementa diferentes métodos de controle (PID, DLQR e DLQR-Event) para um sistema de controle baseado em CANopen. Ele utiliza as bibliotecas Armadillo e ManoplaLelyBBB para cálculo matricial e comunicação com dispositivos, respectivamente. O código inclui funcionalidades para ajustar os parâmetros do controlador, monitorar o desempenho do sistema e registrar os dados do experimento em arquivos de log.
+Este projeto implementa um sistema de controle baseado em um Controlador dLQR com recursos adicionais para detecção de eventos e modos de operação dinâmicos. Ele é projetado para sistemas mecatrônicos com controle de posição, corrente e velocidade, utilizando a biblioteca Armadillo para cálculos matemáticos e integração com CANopen.
 
+# Funcionamento do código
+
+1. Modos de Controle:
+
++ Controle PID.
++ Controle dLQR (Determinístico Linear Quadrático). 
++ Controle dLQR com detecção de eventos baseados em erros dinâmicos.
+
+2. Registro de Dados:
+
++ Registra informações detalhadas sobre o sistema, como pulsos do motor, corrente real, velocidade e erros de controle.
++ Salva os logs em um arquivo CSV com timestamp e parâmetros de configuração.
+
+3. libraries 
+
+O projeto utiliza as seguintes bibliotecas:
+
++ Armadillo: cálculos matriciais.
++ chrono: medição de tempo.
++ iostream, fstream: entrada e saída de dados.
++ cmath: cálculos matemáticos.
++ map, vector, tuple: organização de dados.
++ ManoplaLelyBBB: abstração para a interface com dispositivos CANopen (personalizada)
+
+4. Estrutura do código
+   
++ Classe MyLog: Gerenciar registros de dados do sistema para exporta no CSV
++ Classe ManoplaLelyBBB: Gerenciar interface entre o programa e os dispositivos CANopen.
++ Estrutura EventDLQRControlPreset: conjunto predefinido de parâmetros para o controle dLQR baseado em eventos.
+
+5. Modos de Operação
+   
++ position-mode: Modo de controle baseado em posição.
++ current-mode: Controle de corrente 
++ pid: Controle PID com parâmetros ajustáveis (Kp, Kd, Ki).
++ dlqr e dlqr-event: Controle dLQR com ou sem detecção de eventos.
+  
 # Quickstart
 
 ## Requisitos
