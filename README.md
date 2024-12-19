@@ -15,8 +15,9 @@ Este projeto do github é uma fork do projeto original desenvolvido por Henrique
 
 Este projeto implementa um sistema de controle baseado em um Controlador dLQR com recursos adicionais para detecção de eventos e modos de operação dinâmicos. Ele é projetado para sistemas mecatrônicos com controle de posição, corrente e velocidade, utilizando a biblioteca Armadillo para cálculos matemáticos e integração com CANopen.
 
-# Funcionamento do código
-
+# Recursos do código
+  O projeto oferece os seguintes recursos: 
+  
 1. Modos de Controle:
 
 + Controle PID.
@@ -29,8 +30,6 @@ Este projeto implementa um sistema de controle baseado em um Controlador dLQR co
 + Salva os logs em um arquivo CSV com timestamp e parâmetros de configuração.
 
 3. libraries 
-
-O projeto utiliza as seguintes bibliotecas:
 
 + Armadillo: cálculos matriciais.
 + chrono: medição de tempo.
