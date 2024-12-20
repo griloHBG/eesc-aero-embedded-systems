@@ -5,9 +5,9 @@ Docente: Glauco Augusto de Paula Caurin
 Integrantes do Grupo:<br>
                       Alice Czyz Froes Fontes - 11802478 <br>
                       Guilherme Azevedo Escudeiro - 11345600 <br>
+                      Jackson Wagner Silva - 12696211 <br>
                       Jorge Henrique Mellega - 11802610 <br>
                       Rhayna Christiani Vasconcelos Marques Casado - 13676429 <br>
-                      Jackson Wagner Silva - 12696211 <br>
                       Vitor Marques Delmondes - 10820949 <br>
 
 # Introdução
@@ -60,7 +60,7 @@ Para utilizar o software, espera-se que o usuário tenha instalado em sua máqui
 Primeiramente, realize o clone deste repositório git e seus submódulos:
 
 ```bash
-git clone --recurse-submodules git@github.com:Jorge-Henrique-Mellega/eesc-aero-embedded-systems-grupoMK.git
+git clone --recurse-submodules https://github.com/Jorge-Henrique-Mellega/eesc-aero-embedded-systems-grupoMK.git
 ```
 
 Navegue para a pasta do software e execute os comandos:
