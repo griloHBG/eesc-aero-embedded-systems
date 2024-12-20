@@ -6,7 +6,6 @@
 #include <iomanip>
 #include <fstream>
 #include <algorithm>
-#include "ManoplaLelyBBB.h"
 #include <armadillo>
 #include <tuple>
 #include <vector>
@@ -24,6 +23,7 @@ double super_event(double x_norm, double matrix_norm, double k, double a=30, dou
    return sigma*x_norm/matrix_norm + event(k,a,b);
 }
 
+// Definição de constantes para o argumento da interface CAN e de versões/sync
 constexpr unsigned int ARG_CAN_INTERFACE = 1;
 constexpr unsigned int ARG_VERSION = 1;
 constexpr unsigned int ARG_SYNCCALLBACK = 2; // position-mode, current-mode, pid, dlqr, dlqr-event
@@ -37,6 +37,7 @@ constexpr unsigned int ARG_SYNCCALLBACK_DLQR_TYPE = 3; // constant-zero, sine-wa
 constexpr unsigned int ARG_SYNCCALLBACK_DLQREVENT_TYPE = 3; // constant-zero, sine-wave
 constexpr unsigned int ARG_SYNCCALLBACK_DLQREVENT_EVENTPRESET = 4; //minimum-update-rate, minimum-comparison-metric
 
+// Definição de valores padrão para constantes do PID
 constexpr float DEFAULT_KP = 1800.f;
 constexpr float DEFAULT_KD = 150.f;
 constexpr float DEFAULT_KI = 0.f;
@@ -83,6 +84,7 @@ double matrix_norm{0.1492657117991687};
 
 /* best dd (i=3300, N=100) (least amount of error)*/
 
+// Definição de novas matrizes para o sistema (consideradas melhores)
 arma::mat sys_matrix_A = {{  9.98609061e-01,  1.09025360e+01 },
                           { -1.13123668e-04,  9.77691957e-01 }};
 
