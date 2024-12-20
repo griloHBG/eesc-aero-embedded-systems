@@ -1,5 +1,10 @@
-// Header para modularização inicial, separando a extensa main da também
-// extensa fase de declarações, definições, entre outros.
+// Header para modularização, separando a extensa main da também
+// extensa fase de declarações, definições, entre outros. 
+// Modularizar o código pode significar maior clareza e manuteni-
+// bilidade. 
+// Neste trabalho, somente a parte inicial foi modularizada, pois 
+// fazer isso para todo o código fugia do escopo das ideias prin-
+// pais do grupo.
 
 #ifndef CONFIG_DEF_HEADER_H
 #define CONFIG_DEF_HEADER_H
