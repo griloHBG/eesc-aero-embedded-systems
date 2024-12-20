@@ -1,3 +1,6 @@
+// Header para modularização inicial, separando a extensa main da também
+// extensa fase de declarações, definições, entre outros.
+
 #ifndef CONFIG_DEF_HEADER_H
 #define CONFIG_DEF_HEADER_H
 
